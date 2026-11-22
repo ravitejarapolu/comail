@@ -63,7 +63,7 @@ fn resolve_lang(setting: &str) -> String {
     setting.to_string()
 }
 
-/// Localized tray menu labels: (open, quit). "Comail" is a proper noun and stays.
+/// Localized tray menu labels: (open, quit). "Romail" is a proper noun and stays.
 /// Add a match arm per language as catalogs are added on the frontend.
 fn tray_labels(lang: &str) -> (String, String) {
     let (open, quit) = match lang {
@@ -73,7 +73,7 @@ fn tray_labels(lang: &str) -> (String, String) {
         "vi" => ("Mở", "Thoát"),
         _ => ("Open", "Quit"),
     };
-    (format!("{open} Comail"), format!("{quit} Comail"))
+    (format!("{open} Romail"), format!("{quit} Romail"))
 }
 
 pub struct AppState {
@@ -336,7 +336,7 @@ pub fn run() {
             TrayIconBuilder::with_id("comail-tray")
                 .icon(tray_icon)
                 .icon_as_template(cfg!(target_os = "macos"))
-                .tooltip("Comail")
+                .tooltip("Romail")
                 .menu(&menu)
                 .show_menu_on_left_click(false)
                 .on_menu_event(|app, event| match event.id.as_ref() {

@@ -70,7 +70,7 @@ export function TopBar() {
       />
       {!avatarUi && (
         <span className="co-wordmark text-sm font-semibold tracking-[0.14em] text-ink-faint uppercase">
-          Comail
+          Romail
         </span>
       )}
       <span className="text-base font-medium text-ink-muted">{title}</span>
