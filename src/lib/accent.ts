@@ -4,7 +4,7 @@
 // accent is stored as its "#rrggbb" hex; Carbon gets a lifted mix of it.
 
 export const ACCENT_PRESETS = [
-  { key: "violet", light: "#714cb6", dark: "#9d7fd8" },
+  { key: "violet", light: "#5450a4", dark: "#b2b0f0" },
   { key: "blue", light: "#2f6bd0", dark: "#6c9ff0" },
   { key: "teal", light: "#0f7f86", dark: "#4cbcc0" },
   { key: "green", light: "#3c8650", dark: "#74b381" },
